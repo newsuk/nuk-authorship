@@ -9,7 +9,7 @@
     "lint": "concurrently -n CSS,JS -c cyan.bold,yellow.bold \"npm run lint:css\" \"npm run lint:js\"",
     "lint:css": "stylelint src/",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx src/",
-    "start": "webpack serve --config=.config/webpack.config.dev.js",
+    "start": "webpack-dev-server --config=.config/webpack.config.dev.js",
     "build": "webpack --config=.config/webpack.config.prod.js",
     "bump:patch": "bump patch --commit 'The v%s release' package.json package-lock.json README.md plugin.php",
     "bump:minor": "bump minor --commit 'The v%s release' package.json package-lock.json README.md plugin.php",
