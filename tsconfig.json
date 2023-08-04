@@ -1,22 +1,28 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "alwaysStrict": true,
-    "declaration": true,
-    "declarationMap": true,
-    "jsx": "react",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "outDir": "build",
-    "sourceMap": true,
-    "target": "es2017"
-  },
-  "exclude": [
-    "build",
-    "lib",
-    "node_modules",
-    "tests",
-    "vendor"
-  ]
+	"compilerOptions": {
+		"outDir": "./build",
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"target": "es2021",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"esModuleInterop": true,
+		"allowJs": true,
+		"baseUrl": "."
+	},
+	"exclude": ["vendor", "**/__tests__/**/*.ts"]
 }

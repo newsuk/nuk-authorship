@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 
 import { PluginPostStatusInfo } from '@wordpress/edit-post';
 
@@ -7,7 +7,7 @@ import AuthorsSelect from './components/AuthorsSelect';
 export const name = 'authorship';
 
 export const settings = {
-	icon: null,
+	icon: 'welcome-learn-more',
 	render(): ReactElement {
 		return (
 			<PluginPostStatusInfo>

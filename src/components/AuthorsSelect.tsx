@@ -1,5 +1,5 @@
 import { get, isEqual } from 'lodash';
-import React, { ReactElement, useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { Styles } from 'react-select';
 import type {
 	WP_REST_API_Error,
@@ -7,14 +7,14 @@ import type {
 } from 'wp-types';
 
 import apiFetch from '@wordpress/api-fetch';
-import { compose } from '@wordpress/compose';
+import compose from '@wordpress/compose';
 import { withDispatch, withSelect } from '@wordpress/data';
 import { addQueryArgs } from '@wordpress/url';
 
 import { authorshipDataFromWP, Option, SortedOption } from '../types';
 import arrayMove from '../utils/arrayMove';
 
-import SortableSelectContainer, { className as containerClassName } from './SortableSelectContainer';
+import SortableSelectContainer from './SortableSelectContainer';
 
 declare const authorshipData: authorshipDataFromWP;
 
@@ -39,7 +39,7 @@ const createOption = ( user: WP_REST_API_User ): Option => ( {
 	avatar: user?.avatar_urls?.[48] || null,
 } );
 
-const getHelperContainer = (): HTMLElement => document.querySelector( `.${ containerClassName}` );
+const getHelperContainer = (): HTMLElement => document.querySelector( '.authorship-select-container' );
 
 /**
  * Returns the author selector control.
