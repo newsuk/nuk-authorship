@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"outDir": "./build",
-		"jsx": "react-jsx",
+		"jsx": "react",
 		"module": "ESNext",
 		"target": "es2021",
 		"moduleResolution": "node",
